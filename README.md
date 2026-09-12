@@ -15,6 +15,12 @@ Avarodh acts as a drop-in replacement for the standard OpenAI SDK. Point your ex
 1. **Get your Workspace ID:** Log into the [Avarodh Control Plane](https://avarodh.dev), navigate to **Gateway Settings**, and copy your Workspace ID.
 2. **Run the Quickstart:** Clone this repository, add your keys to the `.env` file, and execute `quickstart.py`.
 
+## 🛡️ Data Privacy & Cache Opt-Out
+
+By default, Avarodh accelerates your queries and reduces API costs using a Layer-2 semantic cache. If you are processing highly sensitive payloads and want to ensure your raw prompts and responses are never stored in our database, you can bypass the caching engine entirely.
+
+Simply pass `"x-no-cache": "true"` or `"Cache-Control": "no-store"` in your API request headers. Avarodh will still strictly enforce your Zero-Trust DSPy security guardrails, but it will completely skip all vector lookups and database writes. Your proprietary LLM completions will never be logged.
+
 ## Platform Architecture
 
 Avarodh utilizes a powerful split-plane architecture to combine SaaS convenience with enterprise-grade security.
