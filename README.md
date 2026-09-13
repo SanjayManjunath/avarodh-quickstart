@@ -6,13 +6,13 @@ Avarodh is a Zero-Trust AI reverse proxy that acts as a secure firewall between 
 
 Start routing your AI traffic securely in under 60 seconds. Our Developer Tier is free forever and includes **10,000 monthly proxy requests** to help you build securely from day one.
 
-👉 **[Create your Free Workspace](https://avarodh.dev/signup)**
+👉 **[Create your Free Workspace](https://www.avarodh.dev/)**
 
 ## Drop-in Integration
 
 Avarodh acts as a drop-in replacement for the standard OpenAI SDK. Point your existing client to your dedicated proxy—no complex application rewrites required.
 
-1. **Get your Workspace ID:** Log into the [Avarodh Control Plane](https://avarodh.dev), navigate to **Gateway Settings**, and copy your Workspace ID.
+1. **Get your Workspace ID:** Log into the [Avarodh Control Plane](https://www.avarodh.dev/), navigate to **Gateway Settings**, and copy your Workspace ID.
 2. **Run the Quickstart:** Clone this repository, add your keys to the `.env` file, and execute `quickstart.py`.
 
 ## 🛡️ Data Privacy & Cache Opt-Out
