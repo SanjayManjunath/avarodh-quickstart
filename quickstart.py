@@ -12,6 +12,7 @@ client = OpenAI(
     default_headers={
         # This isolates your enterprise tenant and applies your custom RBAC/guardrails
         "x-plan-id": os.environ.get("AVARODH_WORKSPACE_ID")
+        "x-user-role": "default"
     }
 )
 
