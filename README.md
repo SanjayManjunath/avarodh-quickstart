@@ -22,13 +22,13 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="your-openai-api-key",
-    base_url="https://api.avarodh.dev/v1", # 1. Point to the proxy
+    base_url="[https://api.avarodh.dev/v1](https://api.avarodh.dev/v1)", # 1. Point to the proxy
     default_headers={
         "x-plan-id": "YOUR_WORKSPACE_ID",  # 2. Add your routing header
         "x-user-role": "default"
     }
 )
-
+```
 
 ## 🛡️ Data Privacy & Cache Opt-Out
 
