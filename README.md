@@ -15,22 +15,6 @@ Avarodh acts as a drop-in replacement for the standard OpenAI SDK. Point your ex
 1. **Get your Workspace ID:** Log into the [Avarodh Control Plane](https://www.avarodh.dev/), navigate to **Gateway Settings**, and copy your Workspace ID.
 2. **Run the Quickstart:** Clone this repository, add your keys to the `.env` file, and execute `quickstart.py`.
 
-**Example:**
-Change your `base_url` and pass your Workspace ID in the default headers:
-
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    api_key="your-openai-api-key",
-    base_url="https://api.avarodh.dev/v1", # 1. Point to the proxy
-    default_headers={
-        "x-plan-id": "YOUR_WORKSPACE_ID",  # 2. Add your routing header
-        "x-user-role": "default"
-    }
-)
-
-
 ## 🛡️ Data Privacy & Cache Opt-Out
 
 By default, Avarodh accelerates your queries and reduces API costs using a Layer-2 semantic cache. If you are processing highly sensitive payloads and want to ensure your raw prompts and responses are never stored in our database, you can bypass the caching engine entirely.
