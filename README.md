@@ -8,6 +8,20 @@ Start routing your AI traffic securely in under 60 seconds. Our Developer Tier i
 
 👉 **[Create your Free Workspace](https://www.avarodh.dev/)**
 
+## Zero-Setup Terminal Test
+You don't even need Python to test the proxy. Just grab your Workspace ID and run this directly in your terminal:
+
+```bash
+curl -X POST [https://api.avarodh.dev/v1/chat/completions](https://api.avarodh.dev/v1/chat/completions) \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "x-plan-id: YOUR_WORKSPACE_ID_HERE" \
+  -H "x-user-role: default" \
+  -d '{
+    "model": "gpt-4o-mini",
+    "messages": [{"role": "user", "content": "Explain asynchronous architectures."}]
+  }'
+
 ## Drop-in Integration
 
 Avarodh acts as a drop-in replacement for the standard OpenAI SDK. Point your existing client to your dedicated proxy—no complex application rewrites required.
