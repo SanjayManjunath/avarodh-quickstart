@@ -14,6 +14,7 @@ Avarodh acts as a drop-in replacement for the standard OpenAI SDK. Point your ex
 
 1. **Get your Workspace ID:** Log into the [Avarodh Control Plane](https://www.avarodh.dev/), navigate to **Gateway Settings**, and copy your Workspace ID.
 2. **Run the Quickstart:** Clone this repository, add your keys to the `.env` file, and execute `quickstart.py`.
+
 **Example:**
 Change your `base_url` and pass your Workspace ID in the default headers:
 
@@ -28,6 +29,7 @@ client = OpenAI(
         "x-user-role": "default"
     }
 )
+
 
 ## 🛡️ Data Privacy & Cache Opt-Out
 
